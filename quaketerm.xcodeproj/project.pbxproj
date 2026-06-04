@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6A8C31392F6D514E000260BE /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = 6A8C31382F6D514E000260BE /* SwiftTerm */; };
+		6A8C319F2F6DB1FD000260BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A8C319E2F6DB1FD000260BE /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6A8C31162F6D4A1C000260BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		6A8C31052F6D4A1B000260BE /* quaketerm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quaketerm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8C31152F6D4A1C000260BE /* quaketermTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quaketermTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8C311F2F6D4A1C000260BE /* quaketermUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quaketermUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8C319E2F6DB1FD000260BE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8C31392F6D514E000260BE /* SwiftTerm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +85,9 @@
 				6A8C31072F6D4A1B000260BE /* quaketerm */,
 				6A8C31182F6D4A1C000260BE /* quaketermTests */,
 				6A8C31222F6D4A1C000260BE /* quaketermUITests */,
+				6A8C31372F6D514E000260BE /* Frameworks */,
 				6A8C31062F6D4A1B000260BE /* Products */,
+				6A8C319E2F6DB1FD000260BE /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +99,13 @@
 				6A8C311F2F6D4A1C000260BE /* quaketermUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6A8C31372F6D514E000260BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +128,7 @@
 			);
 			name = quaketerm;
 			packageProductDependencies = (
+				6A8C31382F6D514E000260BE /* SwiftTerm */,
 			);
 			productName = quaketerm;
 			productReference = 6A8C31052F6D4A1B000260BE /* quaketerm.app */;
@@ -195,6 +212,9 @@
 			);
 			mainGroup = 6A8C30FC2F6D4A1B000260BE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6A8C31322F6D4F8A000260BE /* XCRemoteSwiftPackageReference "SwiftTerm" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6A8C31062F6D4A1B000260BE /* Products */;
 			projectDirPath = "";
@@ -212,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8C319F2F6DB1FD000260BE /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,12 +419,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8NFK43ZSJT;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = QuakeTerm;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,12 +453,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8NFK43ZSJT;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = QuakeTerm;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -575,6 +598,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A8C31322F6D4F8A000260BE /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:migueldeicaza/SwiftTerm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A8C31382F6D514E000260BE /* SwiftTerm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A8C31322F6D4F8A000260BE /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTerm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A8C30FD2F6D4A1B000260BE /* Project object */;
 }
